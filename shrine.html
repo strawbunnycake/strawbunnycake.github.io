@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#f8dfe9">
 <title>itachi uchiha ♡</title>
 <link rel="icon" href="assets/pixel-heart.svg" type="image/svg+xml">
-<link rel="stylesheet" href="sweet-carrd-v4.css">
+<link rel="stylesheet" href="sweet-carrd-v5.css">
 </head>
 <body class="shrine-page scrapbook-shrine paged-shrine">
 <div class="site">
@@ -39,8 +39,9 @@
       <section class="book-center">
         <div class="ribbon"><span>♡ my beloved ♡</span></div>
 
-        <div class="shrine-photo scrapbook-photo compact-photo" aria-label="Blank image space">
-          <span>♡</span>
+        <div class="shrine-photo scrapbook-photo compact-photo shrine-image-frame">
+          <span class="photo-tape" aria-hidden="true"></span>
+          <img id="mainShrinePhoto" src="assets/itachi-shrine-1.svg" alt="Pink Itachi fan art">
         </div>
 
         <div class="book-pages" aria-live="polite">
@@ -91,9 +92,11 @@
       </section>
 
       <aside class="photo-side">
-        <div class="mini-photo scrapbook-mini-photo" aria-label="Blank image space">
-          <span>♡</span>
+        <div class="mini-photo scrapbook-mini-photo shrine-image-frame side-image-frame" id="sidePhotoFrame">
+          <span class="photo-tape" aria-hidden="true"></span>
+          <img id="sideShrinePhoto" src="assets/itachi-shrine-3.svg" alt="Pink Itachi fan art detail">
         </div>
+        <div class="side-heart" id="sideHeart" hidden>♡</div>
       </aside>
     </div>
   </main>
@@ -107,6 +110,23 @@
   const count = document.getElementById('pageCount');
   const prev = document.getElementById('prevPage');
   const next = document.getElementById('nextPage');
+  const mainPhoto = document.getElementById('mainShrinePhoto');
+  const sidePhoto = document.getElementById('sideShrinePhoto');
+  const sideFrame = document.getElementById('sidePhotoFrame');
+  const sideHeart = document.getElementById('sideHeart');
+
+  const mainPhotos = [
+    'assets/itachi-shrine-1.svg',
+    'assets/itachi-shrine-2.svg',
+    'assets/itachi-shrine-5.svg'
+  ];
+
+  const sidePhotos = [
+    'assets/itachi-shrine-3.svg',
+    'assets/itachi-shrine-4.svg',
+    null
+  ];
+
   let index = 0;
 
   function showPage(newIndex) {
@@ -116,6 +136,17 @@
       page.classList.toggle('active', i === index);
     });
     count.textContent = (index + 1) + ' / ' + pages.length;
+
+    mainPhoto.src = mainPhotos[index];
+
+    if (sidePhotos[index]) {
+      sidePhoto.src = sidePhotos[index];
+      sideFrame.hidden = false;
+      sideHeart.hidden = true;
+    } else {
+      sideFrame.hidden = true;
+      sideHeart.hidden = false;
+    }
   }
 
   prev.addEventListener('click', () => showPage(index - 1));
