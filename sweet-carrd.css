@@ -355,3 +355,103 @@ button{font:inherit}
     min-height:110px;
   }
 }
+
+
+/* shrine page */
+.shrine-page .page{
+  padding:18px 18px 20px;
+}
+.shrine-page .content-grid{
+  grid-template-columns:145px minmax(0,1fr) 135px;
+  gap:10px;
+}
+.shrine-page .side-inner,
+.shrine-page .main-inner,
+.shrine-page .mini-inner{
+  padding:10px;
+}
+.shrine-page .main-inner{
+  gap:8px;
+}
+.section-label{
+  text-align:center;
+  border:1px dashed #e2bfd0;
+  border-radius:999px;
+  background:#fff8fb;
+  color:#a77a8f;
+  padding:7px 8px;
+  margin-bottom:10px;
+  font-size:.76rem;
+  letter-spacing:.05em;
+}
+.trait-list{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:6px;
+}
+.trait-list span{
+  padding:5px 7px;
+  border:1px solid #ead0dc;
+  border-radius:999px;
+  background:#fffafd;
+  color:#8f7080;
+  font-size:.72rem;
+}
+.love-note{
+  text-align:center;
+  border:1px dashed #e4c7d4;
+  border-radius:14px;
+  background:#fff8fb;
+  color:#8e6e7e;
+  padding:10px 12px;
+  font-size:.82rem;
+  line-height:1.45;
+}
+.tiny-note{
+  font-size:.73rem;
+}
+.special-note{
+  background:#f8e5ee;
+  color:#9e6e85;
+}
+.shrine-photo{
+  min-height:145px;
+  display:grid;
+  place-items:center;
+  border:1px dashed #e0bccd;
+  border-radius:16px;
+  background:
+    radial-gradient(circle at center,#fffdfd 0 42%,transparent 43%),
+    linear-gradient(135deg,#fffafd,#fff3f8);
+}
+.shrine-photo span{
+  font-size:1.5rem;
+  color:#d4a5ba;
+}
+.mini-love{
+  text-align:center;
+  padding:8px 6px;
+  margin-bottom:8px;
+  border:1px solid #ead2dd;
+  border-radius:12px;
+  background:#fffafd;
+  color:#9a7586;
+  font-size:.7rem;
+}
+.mini-photo{
+  min-height:78px;
+  display:grid;
+  place-items:center;
+  border:1px dashed #e2c4d2;
+  border-radius:14px;
+  background:#fff8fb;
+}
+.mini-photo span{
+  color:#d2a5b8;
+}
+@media(max-width:700px){
+  .shrine-page .content-grid{
+    grid-template-columns:1fr;
+  }
+}
