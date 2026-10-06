@@ -266,3 +266,21 @@ button{font:inherit}
   .side-card,.main-card,.mini-card{min-height:auto}
   .blank-box.tall{min-height:150px}
 }
+
+.copy-box{
+  display:grid;
+  place-items:center;
+  text-align:center;
+  padding:18px;
+}
+.copy-box p{
+  margin:0;
+  max-width:34ch;
+  line-height:1.8;
+  color:#8f7080;
+  font-size:.95rem;
+}
+.mini-copy p{
+  font-size:.84rem;
+  line-height:1.55;
+}
