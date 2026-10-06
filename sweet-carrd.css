@@ -284,3 +284,74 @@ button{font:inherit}
   font-size:.84rem;
   line-height:1.55;
 }
+
+
+/* homepage spacing fix */
+.home-page .page{
+  padding:18px 18px 20px;
+}
+.home-page .content-grid{
+  gap:10px;
+  grid-template-columns:135px minmax(0,1fr) 125px;
+}
+.home-page .side-inner,
+.home-page .main-inner,
+.home-page .mini-inner{
+  padding:10px;
+}
+.home-page .main-inner{
+  gap:8px;
+}
+.home-page .main-card{
+  min-height:0;
+}
+.home-page .blank-box.tall{
+  min-height:126px;
+}
+.home-page .blank-box.small{
+  min-height:58px;
+}
+.home-page .copy-box{
+  min-height:0;
+  padding:14px 16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.home-page .copy-box p{
+  width:100%;
+  max-width:28ch;
+  margin:0 auto;
+  text-align:center;
+  font-size:.86rem;
+  line-height:1.55;
+}
+.home-page .mini-copy{
+  padding:11px 14px;
+}
+.home-page .mini-copy p{
+  max-width:32ch;
+  font-size:.78rem;
+  line-height:1.45;
+}
+.home-page .ribbon{
+  margin:2px auto 4px;
+}
+.home-page .tiny-hearts{
+  padding:1px 0;
+  line-height:1;
+}
+.home-page .blank-title{
+  margin-bottom:8px;
+}
+.home-page .dots{
+  margin:5px 0;
+}
+@media(max-width:700px){
+  .home-page .content-grid{
+    grid-template-columns:1fr;
+  }
+  .home-page .blank-box.tall{
+    min-height:110px;
+  }
+}
