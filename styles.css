@@ -1,17 +1,17 @@
 :root{
-  --pink:#fbe4ee;
-  --pink-2:#f7d7e5;
-  --pink-3:#eeb9cf;
+  --pink:#f9e9f0;
+  --pink-2:#f3dce6;
+  --pink-3:#e7bfd0;
   --cream:#fffafc;
   --white:#fffdfd;
-  --lav:#eee8fb;
-  --blue:#edf3ff;
-  --mint:#eef8f2;
-  --ink:#695565;
-  --muted:#968392;
-  --line:#e9c9d8;
-  --deep:#7b6674;
-  --shadow:0 10px 30px rgba(126,73,104,.07);
+  --lav:#f1edf8;
+  --blue:#f3f6fb;
+  --mint:#f1f7f3;
+  --ink:#66545f;
+  --muted:#968792;
+  --line:#ead7df;
+  --deep:#7a6670;
+  --shadow:0 10px 28px rgba(110,84,98,.06);
   --radius:24px;
 }
 
@@ -22,10 +22,11 @@ body{
   min-height:100vh;
   color:var(--ink);
   font-family: ui-rounded, "SF Pro Rounded", "Nunito", "Trebuchet MS", system-ui, sans-serif;
-  background:
-    linear-gradient(90deg, rgba(255,255,255,.32) 50%, transparent 50%) 0 0/32px 32px,
-    linear-gradient(rgba(255,255,255,.32) 50%, transparent 50%) 0 0/32px 32px,
-    #f7e8ef;
+  background-color:#fff6f9;
+  background-image:
+    linear-gradient(rgba(238,220,228,.5) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(238,220,228,.5) 1px, transparent 1px);
+  background-size:34px 34px;
 }
 
 a{color:#9a5178}
@@ -350,4 +351,103 @@ footer .heart{display:inline-block;animation:pulse 1.6s ease-in-out infinite}
   font-size:2.4rem;
   color:#c99db3;
   margin-bottom:8px;
+}
+
+
+/* soft pastel override */
+.topbar,
+.card{
+  background:rgba(255,252,253,.97) !important;
+  border-color:#ead8e0 !important;
+  box-shadow:0 8px 24px rgba(110,84,98,.055) !important;
+}
+
+.window-strip{
+  background:linear-gradient(90deg,#f7edf2,#f3eff8,#f8eef3) !important;
+  border-bottom-color:#ead8e0 !important;
+}
+
+nav a{
+  background:#fff9fb !important;
+  border-color:#ead2dd !important;
+  box-shadow:0 3px 0 #e9d6df !important;
+  color:#765967 !important;
+}
+nav a[aria-current="page"],
+nav a:hover{
+  background:#f4dfe8 !important;
+  color:#654f5b !important;
+}
+
+.eyebrow{
+  background:#f3eaf3 !important;
+  border-color:#e6d8e8 !important;
+  color:#675461 !important;
+}
+
+.hero h2 .pink{
+  color:#d89bb5 !important;
+}
+
+.btn{
+  background:#f3dce6 !important;
+  border-color:#e3c5d2 !important;
+  color:#6a5360 !important;
+  box-shadow:0 4px 0 #e4d1d9 !important;
+}
+.btn.secondary{
+  background:#fffafd !important;
+  border-color:#e6dced !important;
+  box-shadow:0 4px 0 #e1d8e8 !important;
+}
+
+.hero-art{
+  background:
+    radial-gradient(circle at 25% 20%,#fff 0 7%,transparent 7.5%),
+    radial-gradient(circle at 75% 76%,#fff 0 5%,transparent 5.5%),
+    linear-gradient(155deg,#fff5f8,#f5eff9) !important;
+}
+
+.hero-art .tiny-note{
+  background:#fffafd !important;
+  border-color:#e7d3dd !important;
+  color:#87717d !important;
+}
+
+.tile,
+.pixel-card,
+.fave,
+.link-card,
+.shrine-panel{
+  background:#fffafd !important;
+  border-color:#ead8e0 !important;
+}
+
+.gallery-slot{
+  border-color:#ead4df !important;
+  background:
+    linear-gradient(135deg,rgba(255,252,253,.95),rgba(248,241,246,.95)),
+    repeating-linear-gradient(45deg,#fff 0 10px,#fbf5f8 10px 20px) !important;
+  color:#8f7a85 !important;
+}
+
+.quote-card{
+  background:linear-gradient(140deg,#fffafd,#f9f0f4) !important;
+  border-color:#e6ccd7 !important;
+}
+
+.tag{
+  background:#fffafd !important;
+  border-color:#ead8e0 !important;
+}
+
+.notice{
+  background:linear-gradient(135deg,#fffafd,#f7f1f6) !important;
+  border-color:#e2dbe8 !important;
+  color:#766a73 !important;
+}
+
+.cute-divider,
+.big-heart{
+  color:#cfa3b7 !important;
 }
