@@ -681,3 +681,47 @@ button{font:inherit}
     margin-bottom:0;
   }
 }
+
+
+/* long shrine letter */
+.letter-section h3{
+  margin:0 0 7px;
+  color:#a37289;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:.9rem;
+  font-style:italic;
+  font-weight:500;
+  text-align:center;
+}
+.letter-section p{
+  margin:0;
+}
+.letter-divider{
+  text-align:center;
+  color:#cba0b4;
+  padding:2px 0 10px;
+  font-size:.82rem;
+}
+.photo-side{
+  padding-top:20px;
+}
+.photo-side .scrapbook-mini-photo{
+  margin-top:0;
+}
+.scrapbook-shrine .letter-paper{
+  padding-top:26px;
+}
+.scrapbook-shrine .letter-paper p{
+  font-size:.79rem;
+  line-height:1.62;
+}
+.scrapbook-shrine .letter-signoff{
+  margin-top:12px;
+  text-align:center;
+  font-size:.82rem;
+}
+@media(max-width:700px){
+  .photo-side{
+    padding-top:0;
+  }
+}
